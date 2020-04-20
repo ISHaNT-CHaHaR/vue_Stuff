@@ -8,19 +8,43 @@
       <script src="https://cdn.jsdelivr.net/npm/vue"></script>
    </head>
    <body>
+      <style>
+         body {
+            height: 100vh;
+         }
+      </style>
+
       <div id="root">
-         <span v-if="seen">
-            HI
-         </span>
-         <span v-else>
-            Error
-         </span>
+         <ol>
+            <todo-item
+               v-for="item in groceryList"
+               v-bind:todo="item"
+            ></todo-item>
+         </ol>
       </div>
       <script>
+         Vue.component('todo-item', {
+            props: ['todo'],
+            template: '<li>{{todo.text}}</li>',
+         });
+
          let app = new Vue({
             el: '#root',
             data: {
-               seen: false,
+               groceryList: [
+                  {
+                     id: 0,
+                     text: 'Vegetables',
+                  },
+                  {
+                     id: 1,
+                     text: 'Cheese',
+                  },
+                  {
+                     id: '2',
+                     text: 'Milk',
+                  },
+               ],
             },
          });
       </script>
