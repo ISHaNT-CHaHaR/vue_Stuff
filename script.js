@@ -47,15 +47,23 @@
 //    },
 // });
 
-let app = new Vue({
-   el: '#vue-app',
+// let app = new Vue({
+//    el: '#vue-app',
+//    data: {
+//       name: 'ishant',
+//       job: 'researcher',
+//    },
+//    methods: {
+//       greet: function () {
+//          return 'Hann bhai?';
+//       },
+//    },
+// });
+
+var id = new Vue({
+   el: '#app',
    data: {
-      name: 'ishant',
-      job: 'researcher',
-   },
-   methods: {
-      greet: function () {
-         return 'Hann bhai?';
-      },
+      product: 'Socks',
+      image: './DlDaGxnW4AAZozn.jpg',
    },
 });
