@@ -51,6 +51,11 @@ let app = new Vue({
    el: '#vue-app',
    data: {
       name: 'ishant',
-      job: 'resaercher'
+      job: 'researcher',
+   },
+   methods: {
+      greet: function () {
+         return 'Hann bhai?';
+      },
    },
 });
