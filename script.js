@@ -60,10 +60,11 @@
 //    },
 // });
 
-var id = new Vue({
-   el: '#app',
-   data: {
-      product: 'Socks',
-      image: './DlDaGxnW4AAZozn.jpg',
-   },
-});
+// var id = new Vue({
+//    el: '#app',
+//    data: {
+//       product: 'Socks',
+//       image: './DlDaGxnW4AAZozn.jpg',
+//    },
+// });
+
