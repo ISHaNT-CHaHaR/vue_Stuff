@@ -67,4 +67,31 @@
 //       image: './DlDaGxnW4AAZozn.jpg',
 //    },
 // });
+var app = new Vue({
+   el: '#app',
+   data: {
+      product: 'Graphic',
+      image: './vmSocks-green-onWhite.jpg',
+      inStock: true,
+      cart: 0,
+      details: ['80% Cotton', '20% polyester', 'Gender Neutral'],
 
+      variants: [
+         {
+            variantId: 2234,
+            variantColor: 'green',
+            variantImage: './vmSocks-green-onWhite.jpg',
+         },
+         {
+            variantId: 2235,
+            variantColor: 'blue',
+            variantImage: './vmSocks-blue-onWhite.jpg',
+         },
+      ],
+   },
+   methods: {
+      addToCar() {
+         this.cart += 1;
+      },
+   },
+});
